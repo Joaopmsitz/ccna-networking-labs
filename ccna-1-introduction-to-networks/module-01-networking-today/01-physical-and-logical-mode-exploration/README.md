@@ -2,7 +2,6 @@
 
 <img width="1439" height="899" alt="image" src="https://github.com/user-attachments/assets/56ae9f2a-1e48-478c-a8f8-e85e8dd7a4ba" />
 
-
 ## 🧪 Activities
 
 - Investigated the Packet Tracer interface
@@ -16,9 +15,13 @@
 
 ## ❓ Questions & Findings
 
-### Part 1
+# Part 1 — Investigate the Bottom Toolbar
 
-**What are the subcategories for Network Devices?**
+### Question
+
+What are the subcategories for Network Devices?
+
+### Answer
 
 - Routers
 - Switches
@@ -27,25 +30,33 @@
 - Security
 - WAN Emulation
 
-### Part 2
+---
 
-**Which devices use a wired connection to connect to switch ALS2?**
+# Part 2 — Investigate Devices in a Wiring Closet
 
-**Answer:**
+### Question D
+
+Which devices use a wired connection to connect to switch ALS2?
+
+### Answer
+
 - Access_Point
 - WebServer
 
-### 📸 Evidence
+#### 📸 Evidence
 
 <img width="1439" height="899" alt="image" src="https://github.com/user-attachments/assets/af9fb3a7-e844-44d5-a83f-6170040870c6" />
 
 *Access_Point and WebServer connected to switch ALS2.*
 
-### Part 3
+---
 
-**Which device is connected to the Access_Point?**
+### Question E
 
-**Answer:**
+Which device is connected to the Access_Point?
+
+### Answer
+
 - Laptop_1
 
 #### 📸 Evidence
@@ -56,11 +67,12 @@
 
 ---
 
-### Part 4
+### Question F
 
-**Where is the device connected to the Access_Point physically located?**
+Where is the device connected to the Access_Point physically located?
 
-**Answer:**
+### Answer
+
 - Branch Office Wiring Closet
 
 #### 📸 Evidence
@@ -68,6 +80,24 @@
 <img width="1439" height="899" alt="image" src="https://github.com/user-attachments/assets/9dffee0f-9de8-4469-bb8d-78dd53b25052" />
 
 *Physical location of Laptop_1.*
+
+---
+
+# Part 3 — Connect End Devices to Networking Devices
+
+In progress...
+
+# Part 4 — Install a Backup Router
+
+In progress...
+
+# Part 5 — Configure a Hostname
+
+In progress...
+
+# Part 6 — Explore the Rest of the Network
+
+In progress...
 
 ## 💻 Commands Used
 
