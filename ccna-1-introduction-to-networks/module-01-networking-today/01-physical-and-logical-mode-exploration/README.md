@@ -62,10 +62,6 @@
 - Access_Point
 - WebServer
 
-#### 📸 Evidence
-
-[imagem aqui]
-
 *Access_Point and WebServer connected to switch ALS2.*
 
 ---
