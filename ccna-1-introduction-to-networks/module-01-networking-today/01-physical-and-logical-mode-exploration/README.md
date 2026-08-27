@@ -98,26 +98,15 @@ Connect an end device to the network and establish management access to a Cisco 
 
 <img width="1439" height="899" alt="image" src="https://github.com/user-attachments/assets/4dcbdc10-1490-4ac7-a254-d2b5bf04511b" />
 
-### 🧠 What I Learned
-
-- FastEthernet interfaces are used for network communication.
-- RS232 is used for console management access.
-- Cisco devices can be configured locally through a console connection.
-- Data traffic and management traffic use different interfaces.
-
 # Part 4 — Install a Backup Router
 
-In progress...
+- Installed Backup_Router in the rack
+- Powered on the device
+- Connected the USB console cable to Laptop_1
 
 # Part 5 — Configure a Hostname
 
-In progress...
-
-# Part 6 — Explore the Rest of the Network
-
-In progress...
-
-## 💻 Commands Used
+### Commands
 
 ```text
 enable
@@ -125,6 +114,14 @@ configure terminal
 hostname Edge_Router_Backup
 end
 ```
+
+### 📸 Evidence
+
+<img width="1439" height="896" alt="image" src="https://github.com/user-attachments/assets/d2e58787-ec27-434f-95df-692247f55567" />
+
+# Part 6 — Explore the Rest of the Network
+
+Explored additional locations and devices available in Physical Mode.
 
 ## 🧠 Key Concepts
 
