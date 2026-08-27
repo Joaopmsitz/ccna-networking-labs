@@ -41,31 +41,6 @@
 
 *Access_Point and WebServer connected to switch ALS2.*
 
-### Part 1
-
-**What are the subcategories for Network Devices?**
-
-- Routers
-- Switches
-- Hubs
-- Wireless Devices
-- Security
-- WAN Emulation
-
----
-
-### Part 2
-
-**Which devices use a wired connection to connect to switch ALS2?**
-
-**Answer:**
-- Access_Point
-- WebServer
-
-*Access_Point and WebServer connected to switch ALS2.*
-
----
-
 ### Part 3
 
 **Which device is connected to the Access_Point?**
