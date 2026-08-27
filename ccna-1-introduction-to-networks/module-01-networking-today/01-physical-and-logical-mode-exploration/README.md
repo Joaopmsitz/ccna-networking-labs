@@ -85,7 +85,25 @@ Where is the device connected to the Access_Point physically located?
 
 # Part 3 — Connect End Devices to Networking Devices
 
-In progress...
+Connect an end device to the network and establish management access to a Cisco router.
+
+### Tasks Performed
+
+- Connected PC_1 to switch ALS2 using a Copper Straight-Through cable
+- Connected PC_1 to Edge_Router using a Console Cable
+- Identified FastEthernet and RS232 interfaces
+- Established local management connectivity
+
+### 📸 Evidence
+
+<img width="1439" height="899" alt="image" src="https://github.com/user-attachments/assets/4dcbdc10-1490-4ac7-a254-d2b5bf04511b" />
+
+### 🧠 What I Learned
+
+- FastEthernet interfaces are used for network communication.
+- RS232 is used for console management access.
+- Cisco devices can be configured locally through a console connection.
+- Data traffic and management traffic use different interfaces.
 
 # Part 4 — Install a Backup Router
 
