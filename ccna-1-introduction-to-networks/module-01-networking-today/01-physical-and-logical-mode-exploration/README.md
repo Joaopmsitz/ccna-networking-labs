@@ -1,5 +1,7 @@
 # Lab 01 — Physical and Logical Mode Exploration
 
+<img width="1439" height="899" alt="image" src="https://github.com/user-attachments/assets/56ae9f2a-1e48-478c-a8f8-e85e8dd7a4ba" />
+
 ## 🎯 Objective
 
 Explore the Physical and Logical workspace in Cisco Packet Tracer and become familiar with network devices, connections, and basic Cisco IOS configuration.
