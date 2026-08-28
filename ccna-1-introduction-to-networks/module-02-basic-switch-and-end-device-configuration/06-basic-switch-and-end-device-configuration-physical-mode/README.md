@@ -117,7 +117,7 @@ The ping was successful with 0% packet loss.
 
 # Part 3 — Basic Switch Configuration
 
-The switches were accessed through a console connection using PC-A and PC-B.
+The switches were accessed through a console connection using the end devices.
 
 ---
 
@@ -158,12 +158,12 @@ The `login` command enables password authentication on the console line.
 Privileged EXEC mode was protected using the required password:
 
 ```text
-S1(config)# enable
-S1# configure terminal
 S1(config)# enable password class
 ```
 
 The same configuration was applied to S2.
+
+The `enable password` command protects access to privileged EXEC mode.
 
 > This activity specifically required `class` as the privileged EXEC password and `cisco` for console access.
 
@@ -191,6 +191,8 @@ S2(config-if)# no shutdown
 
 The VLAN 1 SVI provides an IP-based management interface for each switch.
 
+The `no shutdown` command administratively enables the SVI.
+
 ---
 
 ## MOTD Banner
@@ -202,6 +204,8 @@ S1(config)# banner motd "Authorized Access Only!"
 ```
 
 The same configuration was applied to S2.
+
+The MOTD banner is displayed when a user connects to the device and is commonly used to provide security and access warnings.
 
 ---
 
@@ -389,5 +393,7 @@ S1 VLAN 1  192.168.1.1
 S2 VLAN 1  192.168.1.2
 PC-B       192.168.1.11
 ```
+
+<img width="1439" height="899" alt="image" src="https://github.com/user-attachments/assets/9f2edb84-b07d-4cba-be15-a7920fc750da" />
 
 Connectivity between the PCs and switches was verified using `ping`, and the switch configurations were saved to NVRAM.
