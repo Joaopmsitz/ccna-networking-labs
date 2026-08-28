@@ -296,7 +296,7 @@ PC> ping 192.168.1.254
 
 All required connectivity tests were expected to succeed.
 
-> **Note:** Packet Tracer may occasionally show a lower success rate on the first ping attempt. Repeating the test should result in successful connectivity once the devices have completed the necessary address-resolution process.
+<img width="1439" height="899" alt="image" src="https://github.com/user-attachments/assets/7bf9f6c4-935c-4456-b39e-a98ad2436113" />
 
 ---
 
