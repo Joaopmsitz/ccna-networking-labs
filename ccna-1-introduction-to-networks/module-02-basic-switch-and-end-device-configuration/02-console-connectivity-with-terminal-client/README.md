@@ -1,5 +1,7 @@
 # 02 - Console Connectivity with Terminal Client
 
+<img width="1439" height="899" alt="image" src="https://github.com/user-attachments/assets/488145cb-0753-423f-a10f-b25cecb1a295" />
+
 ## Overview
 
 This Packet Tracer lab explored physical console access to Cisco devices using both serial console and USB console connections.
