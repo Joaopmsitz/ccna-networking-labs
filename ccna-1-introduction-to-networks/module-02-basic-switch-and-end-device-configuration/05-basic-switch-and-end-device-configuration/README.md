@@ -246,6 +246,9 @@ PC1> ping <S1Add>
 PC1> ping <S2Add>
 ```
 
+<img width="1439" height="898" alt="image" src="https://github.com/user-attachments/assets/e5a31bda-d2bb-40ed-b79b-8bdc0f244027" />
+
+
 The objective was to achieve successful connectivity between the devices in the LAN.
 
 Successful ping responses confirmed that:
