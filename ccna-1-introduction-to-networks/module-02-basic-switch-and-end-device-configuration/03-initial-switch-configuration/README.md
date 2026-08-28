@@ -337,33 +337,5 @@ S2# show startup-config
 | View startup configuration     | `show startup-config`                |
 | Save configuration             | `copy running-config startup-config` |
 
----
 
-## Skills Practiced
 
-* Cisco IOS CLI navigation
-* Privileged EXEC and Global Configuration modes
-* Hostname configuration
-* Console authentication
-* Privileged EXEC authentication
-* Password security
-* `enable password` vs. `enable secret`
-* Password encryption
-* MOTD banner configuration
-* Running vs. startup configuration
-* NVRAM configuration management
-* Basic switch hardening
-* Configuration verification
-
----
-
-## Key Takeaways
-
-* The running configuration is stored in RAM and represents the active device configuration.
-* The startup configuration is stored in NVRAM and is loaded when the device boots.
-* Console access should be protected to prevent unauthorized local access.
-* `enable secret` provides stronger protection than the legacy `enable password`.
-* `service password-encryption` prevents supported plaintext passwords from appearing directly in the configuration.
-* MOTD banners can provide security and access warnings to users.
-* Configuration changes should be verified and saved to NVRAM to survive a device reboot.
-* The same configuration principles can be applied consistently across multiple switches.
