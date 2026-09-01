@@ -315,7 +315,7 @@ The **Wireless0** interface was disabled and the **3G/4G Cell1** interface was e
 After the cellular connection became active, the web browser was used to access:
 
 ```text
-www.cisco.srv
+www.cisco.pka
 ```
 
 The Cisco Packet Tracer webpage was successfully displayed.
@@ -426,6 +426,8 @@ show interface serial 0/0/0
 Used to inspect the serial interface and its configured bandwidth.
 
 ---
+
+<img width="1439" height="899" alt="image" src="https://github.com/user-attachments/assets/97f06b8e-332f-4139-a723-58fba222c982" />
 
 # Result
 
