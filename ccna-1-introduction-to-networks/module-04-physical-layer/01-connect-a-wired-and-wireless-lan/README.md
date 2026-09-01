@@ -44,26 +44,6 @@ The activity reinforced Physical Layer concepts by requiring the selection of ap
 - Coaxial Communication
 - TCP/IP
 
----
-
-# Network Topology
-
-The completed topology included:
-
-```text
-Family PC
-    │
-    └── Wireless Router
-            │
-            └── Cable Modem
-                    │
-                  Cloud
-                    │
-                 Router0
-                /       \
-      Netacad Server   Router1
-                            │
-                         Switch
 ```
 
 The Wireless Router also provided wireless connectivity to:
