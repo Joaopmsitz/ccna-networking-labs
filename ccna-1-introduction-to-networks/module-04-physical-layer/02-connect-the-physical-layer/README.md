@@ -54,11 +54,12 @@ The activity reinforced Physical Layer concepts by requiring the identification 
 
 ## 1. Management Ports
 
-The East router was inspected in the Physical workspace to identify the available management ports.
+The East router was inspected in the Physical workspace to identify its available management ports.
 
 ### Management Ports
 
-**Answer:** `[Enter your answer here]`
+* Console
+* AUX
 
 ---
 
@@ -68,11 +69,19 @@ The available LAN and WAN interfaces on the East router were identified.
 
 ### LAN Interfaces
 
-**Answer:** `[Enter your answer here]`
+The East router has **2 GigabitEthernet interfaces**:
+
+* GigabitEthernet0/0
+* GigabitEthernet0/1
 
 ### WAN Interfaces
 
-**Answer:** `[Enter your answer here]`
+The East router has **2 Serial interfaces**:
+
+* Serial0/0/0
+* Serial0/0/1
+
+Therefore, the East router has **2 LAN interfaces and 2 WAN interfaces**.
 
 ### Physical Interfaces
 
@@ -84,7 +93,7 @@ East> show ip interface brief
 
 The `Vlan1` interface is a virtual interface and does not represent a physical port.
 
-**Number of physical interfaces:** `[Enter your answer here]`
+**Number of physical interfaces:** **4**
 
 ---
 
@@ -96,7 +105,7 @@ The default bandwidth of the GigabitEthernet interface was checked using:
 East> show interface gigabitethernet 0/0
 ```
 
-**Default bandwidth:** `[Enter your answer here]`
+**Default bandwidth:** **1,000,000 Kbit**
 
 The serial interface was then checked using:
 
@@ -104,11 +113,11 @@ The serial interface was then checked using:
 East> show interface serial 0/0/0
 ```
 
-**Default bandwidth:** `[Enter your answer here]`
+**Default bandwidth:** **1,544 Kbit**
 
 ### Key Concept — Interface Bandwidth
 
-The bandwidth value displayed on a Cisco interface can be used by routing protocols to calculate the best path to a destination.
+The bandwidth value configured on a Cisco interface can be used by routing protocols to calculate the best path to a destination.
 
 For serial interfaces, the configured bandwidth value does **not necessarily represent the actual physical bandwidth of the link**. The actual service speed depends on the WAN service provided by the service provider.
 
@@ -118,11 +127,11 @@ For serial interfaces, the configured bandwidth value does **not necessarily rep
 
 The East router was inspected to determine the number of available expansion slots.
 
-**East router:** `[Enter number of slots]`
+**East Router:** **1 expansion slot**
 
 Switch2 was also inspected.
 
-**Switch2:** `[Enter number of slots]`
+**Switch2:** **5 expansion slots**
 
 ---
 
@@ -134,13 +143,15 @@ The East router needed to provide connectivity for PC1, PC2, and PC3 without usi
 
 ### Module Selected
 
-**Answer:** `[Enter module name]`
+**HWIC-4ESW**
+
+The HWIC-4ESW is a four-port Ethernet switch module that adds additional Ethernet switch ports to the router.
 
 ### Number of Hosts Supported
 
-**Answer:** `[Enter number of hosts]`
+**4 hosts**
 
-The selected module provides additional Ethernet interfaces, allowing multiple end devices to connect directly to the router.
+The module provides four Ethernet ports, allowing up to four directly connected Ethernet devices.
 
 ---
 
@@ -150,9 +161,9 @@ Switch2 required a module capable of providing a Gigabit optical connection to S
 
 ### Module Selected
 
-**Answer:** `[Enter module name]`
+**PT-SWITCH-NM-1FGE**
 
-The module provides a fiber-optic interface for high-speed network connectivity.
+This module provides a Gigabit Ethernet fiber-optic interface for connectivity to Switch3.
 
 ---
 
@@ -160,9 +171,9 @@ The module provides a fiber-optic interface for high-speed network connectivity.
 
 The appropriate modules were installed in East and Switch2.
 
-Cisco devices in this activity do not support hot-swapping of these modules. Therefore, the devices had to be powered off before installing or removing modules.
+The devices had to be powered off before installing the modules because the interfaces in this activity are not hot-swappable.
 
-After installation, the devices were powered back on.
+After the modules were installed, the devices were powered back on.
 
 ### Switch2 Module Slot
 
@@ -172,7 +183,7 @@ The following command was used to identify the interface created by the installe
 Switch2> show ip interface brief
 ```
 
-**Module slot:** `[Enter slot]`
+**Module slot:** **GigabitEthernet5/1**
 
 ---
 
@@ -212,7 +223,7 @@ The following command was used to verify the status of the East router's interfa
 East> show ip interface brief
 ```
 
-The expected output included:
+The output was:
 
 ```text
 Interface              IP-Address      OK? Method Status                Protocol
@@ -229,13 +240,15 @@ Vlan1                  172.29.1.1      YES manual up                    up
 
 ### Analysis
 
-The output shows that the interfaces required for the lab were operational.
+The interfaces required for the lab were operational.
 
 The `up/up` state indicates that both the physical interface and the associated data-link protocol are operational.
 
 The `down/down` state indicates that the physical interface is not operational.
 
-The `up/down` state indicates that the physical layer is operational, but the data-link protocol is not.
+The `up/down` state indicates that the physical layer is operational, but the data-link protocol is not operational.
+
+The `Vlan1` interface is a **virtual interface**, not a physical interface.
 
 ---
 
@@ -263,7 +276,7 @@ The Cisco Packet Tracer webpage was successfully displayed.
 
 # 3. Verify TabletPC Connectivity
 
-The TabletPC was also configured to use its wireless interface.
+The TabletPC was configured to use its wireless interface.
 
 After enabling the **Wireless0** interface, connectivity to the web server was verified using the web browser.
 
@@ -313,6 +326,12 @@ Understanding interface naming is essential when configuring Cisco devices throu
 
 Expansion modules allow networking devices to gain additional interfaces or support different types of connectivity.
 
+## HWIC-4ESW
+
+The **HWIC-4ESW** is a four-port Ethernet switch module that can be installed in a compatible router to provide additional Ethernet switch ports.
+
+In this lab, it was used to connect PC1, PC2, and PC3 directly to the East router.
+
 ## Copper Straight-Through
 
 Traditionally used to connect different types of Ethernet devices, such as a router to a switch or a switch to a PC.
@@ -331,17 +350,17 @@ Fiber-optic cables use light to transmit data and are commonly used for high-spe
 
 A DCE cable is used in serial WAN connections and provides clocking for the serial link.
 
-In a Cisco lab environment, the DCE side is typically configured with a clock rate.
+In Cisco environments, the DCE side of a serial connection is typically configured with a `clock rate`.
 
 ## Interface Status
 
 Cisco interface status can be summarized as:
 
-| Status | Protocol | Meaning                                                          |
-| ------ | -------- | ---------------------------------------------------------------- |
-| Up     | Up       | Physical and data-link layers are operational                    |
-| Down   | Down     | Physical interface is not operational                            |
-| Up     | Down     | Physical layer is operational, but the data-link protocol is not |
+| Status | Protocol | Meaning                                                                      |
+| ------ | -------- | ---------------------------------------------------------------------------- |
+| Up     | Up       | Physical and data-link layers are operational                                |
+| Down   | Down     | Physical interface is not operational                                        |
+| Up     | Down     | Physical layer is operational, but the data-link protocol is not operational |
 
 ---
 
@@ -367,6 +386,6 @@ Cisco interface status can be summarized as:
 
 ✅ Cellular connectivity verified
 
-✅ End-to-end network connectivity successfully tested
+✅ Web connectivity successfully tested
 
 ✅ Lab completed successfully
