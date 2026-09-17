@@ -1,6 +1,6 @@
-<img width="1439" height="899" alt="image" src="https://github.com/user-attachments/assets/0b3e4903-b386-48a1-af5f-cd735028905e" />
-
 # Day 4 — Basic Device Security
+
+<img width="1439" height="899" alt="image" src="https://github.com/user-attachments/assets/0b3e4903-b386-48a1-af5f-cd735028905e" />
 
 Lab completed as part of **Jeremy's IT Lab — Free CCNA 200-301 Complete Course**.
 
